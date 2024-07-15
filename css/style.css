@@ -1010,6 +1010,11 @@ video {
   color: rgb(84 230 175 / var(--tw-text-opacity));
 }
 
+.focus\:bg-stroke:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(151 151 151 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 434px) {
   .mobile\:h-5 {
     height: 1.25rem;
