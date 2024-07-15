@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pod&mdash;Tailwind</title>
+  </head>
+  <body class="relative md:overflow-x-hidden">
+    <!-- Bg color -->
+    <div
+      class="h-[650px] w-screen hidden sm:block bg-darkblue absolute -z-50"
+    ></div>
+    <!-- Desktop & Tablet Section -->
+    <section class="md:pl-40 p-10 md:py-20 hidden sm:block">
+      <!-- Desktop Image -->
+      <img
+        src="desktop/image-host.jpg "
+        class="absolute -z-20 right-0 w-[670px] hidden md:block"
+        alt=""
+      />
+      <!-- Tablet Image -->
+      <img
+        src="tablet/image-host.jpg"
+        class="block absolute -z-20 right-0 w-[500px] h-[560px] md:hidden"
+        alt=""
+      />
+      <!-- Logo -->
+      <img src="desktop/logo.svg" class="md:pt-0 pt-12" alt="" />
+      <div
+        class="md:mt-8 mt-14 pt-10 pb-5 pr-0 flex flex-col gap-y-6 bg-darkblue w-[600px]"
+      >
+        <!-- Heading -->
+        <h1
+          class="text-4xl uppercase font-thiner leading-normal first-line:text-cyanish font-serif text-white"
+        >
+          Publish your podcasts everywhere.
+        </h1>
+        <!-- Text -->
+        <p class="w-2/3 text-purple2 leading-normal font-light">
+          Upload your audio to Pod with a single click. We'll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <!-- Form -->
+        <form
+          netlify
+          class="bg-stroke rounded-full w-2/3 p-1 pl-5 flex justify-between"
+        >
+          <input
+            class="bg-stroke placeholder-purple2 text-purple2 rounded-full pl-2 outline-none"
+            placeholder="email address"
+            type="email"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-cyanish rounded-full font-semibold px-5 py-2"
+          >
+            Request Access
+          </button>
+        </form>
+        <!-- Feature Section -->
+        <div class="flex gap-x-5 h-7 mt-5">
+          <img src="desktop/spotify.svg" alt="" />
+          <img src="desktop/apple-podcast.svg" alt="" />
+          <img src="desktop/google-podcasts.svg" alt="" />
+          <img src="desktop/pocket-casts.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- MD & Mobile Section -->
+    <section class="block sm:hidden">
+      <!-- BG Image -->
+      <img
+        src="mobile/image-host.jpg"
+        class="w-screen absolute h-[670px] -z-10"
+        alt=""
+      />
+      <!-- BG color -->
+      <div class="bg-darkblue py-16 p-5 bg-opacity-80 h-[670px]">
+        <!-- POD container -->
+        <div class="flex flex-col text-center gap-y-7">
+          <!-- LOGO -->
+          <div>
+            <img src="desktop/logo.svg" class="w-1/2 mx-auto" alt="" />
+          </div>
+          <!-- Heading -->
+          <h1
+            class="xsm:text-4xl mobile:text-3xl text-xl uppercase font-thiner leading-normal first-line:text-cyanish font-serif text-white"
+          >
+            Publish your podcasts everywhere.
+          </h1>
+          <!-- Text -->
+          <p class="mx-auto xsm:w-3/4 font-light text-purple2 leading-normal">
+            Upload your audio to Pod with a single click. We'll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+          <!-- Feature ICON'S -->
+          <div class="flex gap-x-5 mt-5 mx-auto">
+            <!-- ICON 1 -->
+            <img
+              src="desktop/spotify.svg"
+              class="w-14 h-5 xsm:h-auto xsm:w-auto"
+              alt=""
+            />
+            <!-- ICON 2 -->
+            <img
+              src="desktop/apple-podcast.svg"
+              class="w-16 h-5 xsm:h-auto xsm:w-auto"
+              alt=""
+            />
+            <!-- ICON 3 -->
+            <img
+              src="desktop/google-podcasts.svg"
+              class="w-20 h-5 xsm:h-auto xsm:w-auto"
+              alt=""
+            />
+            <!-- ICON 4 -->
+            <img
+              src="desktop/pocket-casts.svg"
+              class="w-20 h-5 xsm:h-auto xsm:w-auto"
+              alt=""
+            />
+          </div>
+          <!-- Mobile Form -->
+          <form netlify>
+            <input
+              class="bg-stroke p-3 placeholder-purple2 text-purple2 rounded-full pl-7 xsm:w-3/4 mx-auto w-full outline-none"
+              placeholder="email address"
+              type="email"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-cyanish rounded-full font-semibold p-3 xsm:w-3/4 mx-auto w-full outline-none mt-7"
+            >
+              Request Access
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
